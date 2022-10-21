@@ -20,6 +20,7 @@ public class Solution {
             }
         }
         writeStringToFile(outputString);
+        executor.shutdown();
     }
     public static int searchLine(String firstLine, String nonFirstLine){
         if (nonFirstLine.equals("") || nonFirstLine.length() < firstLine.length()) {
